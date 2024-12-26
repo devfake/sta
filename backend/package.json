@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsx src/index.ts"
+    "build": "pm2 start src/index.ts --name sta-backend --interpreter tsx",
+    "stop": "pm2 stop sta-backend"
   },
   "dependencies": {
     "@hono/node-server": "^1.13.7",
