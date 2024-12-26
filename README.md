@@ -3,11 +3,11 @@ sta - simply tag audio
 
 A simple project to embed title and artist metadata into MP3 files - nothing fancy ♫
 
-![flox](./frontend/screenshot.png)
+[![sta](./frontend/screenshot.png)](https://sta.pyxl.dev/)
 
 The frontend is built with Angular, while the backend uses Hono. The backend’s sole purpose is to send a request with uploaded file names to GPT-4o mini to identify the artist and song title as accurately as possible.
 
-All metadata modifications for the title and artist are done locally in the browser using mp3tag.js, ensuring that no files are ever sent to the server.
+All metadata modifications for the title and artist are done locally in the browser using [mp3tag.js](https://github.com/eidoriantan/mp3tag.js), ensuring that no files are ever sent to the server.
 ### Requirements
 
 OpenAI API Key (needed for GPT-4o mini)
